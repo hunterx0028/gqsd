@@ -41,5 +41,3 @@ tar -xf restored.tar.xz
 
 
 Invoke-WebRequest -Uri "https://github.com/ollama/ollama/releases/latest/download/OllamaSetup.exe" -OutFile "$env:USERPROFILE\Downloads\OllamaSetup.exe"
-
-curl -L -o "%USERPROFILE%\Downloads\OllamaSetup.exe" "https://github.com/ollama/ollama/releases/latest/download/OllamaSetup.exe"
