@@ -38,6 +38,3 @@ python zip_to_qr_video.py decode PXL.mp4 restored.tar.xz --sample-fps 15
 tar -xf restored.tar.xz
 
 
-
-
-Invoke-WebRequest -Uri "https://github.com/ollama/ollama/releases/latest/download/OllamaSetup.exe" -OutFile "$env:USERPROFILE\Downloads\OllamaSetup.exe"
