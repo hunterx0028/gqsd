@@ -10,7 +10,7 @@ pip install imageio-ffmpeg
 
 
 -----
-1.先將程式資料夾壓成 zip 
+1.先將程式資料夾壓成 zip 檔案
 
 2.程式預設清除 .net 程式碼以外的東西(如 dll)
 python clean_zip.py clean 你的檔案.zip 乾淨版.zip
@@ -27,7 +27,7 @@ python clean_zip.py repack 刪除不要檔案版.zip 更小版.tar.xz
 
 
 -----
-解壓縮 tar.xz
+解壓縮 tar.xz 檔案
 tar -xf restored.tar.xz
 
 
