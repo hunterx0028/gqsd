@@ -12,13 +12,13 @@ pip install imageio-ffmpeg
 -----
 1.先將程式資料夾壓成 zip 
 
-2.清除 .net 程式碼以外的東西
-python clean_zip.py 你的檔案.zip 乾淨版.zip
+2.程式預設清除 .net 程式碼以外的東西(如 dll)
+python clean_zip.py clean 你的檔案.zip 乾淨版.zip
 
 3.解析檔案中那一些佔據最多容量
 python clean_zip.py analyze 乾淨版.zip
 
-4.依解析內容排除不要的檔案
+4.依解析內容再次排除不要的檔案
 python clean_zip.py clean 乾淨版.zip 更乾淨版.zip --exclude-ext .png --exclude-ext .gif --exclude-ext .jpg --exclude-ext .png --exclude-ext .ttf
 
 5.將檔案壓成更小
