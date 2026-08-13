@@ -24,17 +24,17 @@ python clean_zip.py clean 乾淨版.zip 更乾淨版.zip --exclude-ext .png --ex
 5.將檔案壓成更小
 python clean_zip.py repack 刪除不要檔案版.zip 更小版.tar.xz
 
-6.轉換為影片
-python zip_to_qr_video.py encode 更小版.tar.xz output.mp4 --chunk-size 1200 --fps 3 --repeat 2
 
+
+-----
+解壓縮 tar.xz
+tar -xf restored.tar.xz
 
 
 
 -----
-1.還原為壓縮檔
+將壓縮檔轉換為 QR Code 影片
+python zip_to_qr_video.py encode 更小版.tar.xz output.mp4 --chunk-size 1200 --fps 3 --repeat 2
+
+將 QR Code 影片還原為壓縮檔
 python zip_to_qr_video.py decode PXL.mp4 restored.tar.xz --sample-fps 15
-
-2.解壓縮
-tar -xf restored.tar.xz
-
-
